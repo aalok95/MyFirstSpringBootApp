@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>React + Spring</title>
+	</head>
+	<body>
+	 <div id='root'></div>
+		<script src="react.js"></script>
+		<script src="react-dom.js"></script>
+		<script src="browser.min.js"></script>
+		<script type="text/babel">
+			var Employee = React.createClass({
+			  render: function() {
+				return (<div>employee</div>);
+			  }
+			});
+			var EmployeeTable = React.createClass({
+			  render: function() {
+				return (<div>employee table</div>);
+			  }
+			});
+
+
+			ReactDOM.render(
+			  <EmployeeTable />, document.getElementById('root')
+			);
+		</script>
+	</body>
+</html>
